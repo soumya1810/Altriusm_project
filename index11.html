@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Charts</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style11.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- for mobile device -->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Corben:wght@800&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- 
+	<div class="container">
+		<canvas id="myChart"></canvas>
+	</div>
+ -->
+
+
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+
+	  <div class="one">
+      	  <h5 class="card-title">Brother Cell 10-left</h5>
+	      <div class="radio">
+			<label><input type="radio" name="optradio" checked> In cycle for 40min</label>
+		  </div>
+	       <canvas id="myChart1">
+	   
+	       </canvas>
+	      <p>Job 13: 60 parts behind</p>
+  	  </div>
+  	  <div class="o " >
+     	<canvas id="myChart"></canvas>
+     	<div class="donut-inner text-white"><p>vuub</p></div>
+ 	  </div>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted" id="current_time"></small>
+    </div>
+  </div>
+  <div class="card">
+	  <div class="card-body">
+  		<div class="two">
+	      <h5 class="card-title">NZX-T2</h5>
+	      <div class="radio">
+			<label><input type="radio" name="optradio" checked> Idle for 9 mins</label>
+		  </div>
+	      <canvas id="myChart22"></canvas>
+	      <p class="card-text">Job 11: 2 parts behind</p>
+        </div>
+        <div class="t1">
+      		<canvas id="myChart23"></canvas>
+  		</div>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"  id="current_time1"></small>
+    </div>
+  </div>
+  <div class="card">
+
+    <div class="card-body">
+    	<div class="three">
+	      <h5 class="card-title">NZ T2</h5>
+	      <div class="radio">
+			<label><input type="radio" name="optradio" checked> In cylce for two hours</label>
+		  </div>
+	      <canvas id="myChart32"></canvas>
+	      <p class="card-text">Job 2 : 9 parts behind</p>
+      	</div>
+      	<div class="t2">
+      		<canvas id="myChart33"></canvas>
+  		</div>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted" id="current_time2">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-4 mt-3 mb-3">
+    <div class="card">
+
+      <div class="card-body">
+      	<div class="s1">
+			<h5 class="card-title">Duracentre 1 (by VF3)</h5>
+			 <div class="radio">
+			<label><input type="radio" name="optradio" checked> In cycle for 3 mins</label>
+		  </div>
+	        <h3 class="card-text mb-0 pb-0">70%  5</h3>
+	        <p class="card-text mt-0 pt-0">IN CYLCE   PARTS</p>
+
+	    </div>
+	        <div class="card-footer">
+	      		<small class="text-muted"  id="current_time3"></small>
+  		
+    	</div>
+     
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 mt-3 mb-3">
+    <div class="card">
+      <div class="card-body">
+	      	<div class="s2">
+	        <h5 class="card-title">NH40000</h5>
+	       <div class="radio">
+			<label><input type="radio" name="optradio" checked> Idle 3 hrs</label>
+		  </div>
+	        <h3 class="card-text mb-0 pb-0">-  1</h3>
+	        <p class="card-text mt-0 pt-0">IN CYLCE   PARTS</p>
+	    </div>
+	        <div class="card-footer">
+	      		<small class="text-muted"  id="current_time4"></small>
+	    	</div>
+    	
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 mt-3 mb-3">
+    <div class="card">
+      <div class="card-body">
+      	<div class="s3">
+	        <h5 class="card-title">NL 2599</h5>
+	       	
+	       <div class="radio">
+			<label><input type="radio" name="optradio" checked> Idle for 3 days</label>
+		  </div>
+	        <h3 class="card-text mb-0 pb-0">-  2</h3>
+	        <p class="card-text mt-0 pt-0">IN CYLCE   PARTS</p>
+	    </div>
+	       	
+	        </div>
+	        <div class="card-footer">
+	      		<small class="text-muted"  id="current_time5"></small>
+	    	</div>
+    	
+
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		var today = new Date();
+		 var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time1 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time2 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time3 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time4 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time5 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  
+  document.getElementById("current_time").innerHTML = time;
+  document.getElementById("current_time1").innerHTML = time1;
+  document.getElementById("current_time2").innerHTML = time2;
+  document.getElementById("current_time3").innerHTML = time3;
+  document.getElementById("current_time4").innerHTML = time4;
+  document.getElementById("current_time5").innerHTML = time5;
+
+		let mydoughnut = document.getElementById('myChart1').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='grey';
+		let massDoughnutChart = new Chart(mydoughnut, {
+		type: 'doughnut'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				46,54,89
+				],
+				backgroundColor:'#800000',
+
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});	
+
+		let myChart = document.getElementById('myChart').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='grey';
+		let massPopChart = new Chart(myChart, {
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				46,54,89
+				],
+				backgroundColor:"	#800000",
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+
+
+
+
+	let mydoughnut11 = document.getElementById('myChart22').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='grey';
+
+		let massDoughnutChart1 = new Chart(mydoughnut11, {
+		type: 'doughnut'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1"],
+			datasets:[{
+				label:"Parts",
+				
+				data:[
+				36,84,67
+				],
+				backgroundColor:'green',
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});	
+
+		let myChart1 = document.getElementById('myChart23').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='black';
+		Chart.defaults.global.defaultDisplay=false;
+		let massPopChart1 = new Chart(myChart1, {
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				36,84,67
+				],
+				backgroundColor:'green',
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+
+		let mydoughnut3 = document.getElementById('myChart32').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='grey';
+		let massDoughnutChart3 = new Chart(mydoughnut3, {
+		type: 'doughnut'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				62,39,78
+				],
+				backgroundColor:'orange',
+				
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});	
+
+		let myChart3 = document.getElementById('myChart33').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='grey';
+		let massPopChart3 = new Chart(myChart3, {
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				62,39,78
+				],
+				backgroundColor:'orange',
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+	</script>
+
+
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
