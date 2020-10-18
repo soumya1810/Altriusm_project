@@ -25,21 +25,32 @@
 
 
 <div class="card-deck">
-  <div class="card">
-    <div class="card-body">
+  <div class="card" id="c1">
+    <div class="card-body py-0 px-0" id="c11">
 
 	  <div class="one">
       	  <h5 class="card-title">Brother Cell 10-left</h5>
 	      <div class="radio">
-			<label><input type="radio" name="optradio" checked> In cycle for 40min</label>
+			<label><input type="radio" name="optradio" > In cycle for 40min</label>
 		  </div>
-	       <canvas id="myChart1">
+		  <div class="relative">
+	       <canvas id="myChart1"></canvas>
+	       	<div class="absolute-center text-center">
+		    <p><strong>36%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>62</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+		
+
 	   
-	       </canvas>
-	      <p>Job 13: 60 parts behind</p>
+	       
+	      <p class="mb-0 mt-3">Job 13: 60 parts behind</p>
   	  </div>
   	  <div class="o " >
      	<canvas id="myChart"></canvas>
+
      	
  	  </div>
     </div>
@@ -47,15 +58,24 @@
       <small class="text-muted" id="current_time"></small>
     </div>
   </div>
-  <div class="card">
-	  <div class="card-body">
+  <div class="card" id="c2">
+	  <div class="card-body py-0 px-0" id="c22">
   		<div class="two">
 	      <h5 class="card-title">NZX-T2</h5>
 	      <div class="radio">
 			<label><input type="radio" name="optradio" checked> Idle for 9 mins</label>
 		  </div>
-	      <canvas id="myChart22"></canvas>
-	      <p class="card-text">Job 11: 2 parts behind</p>
+		  <div class="relative">
+	       <canvas id="myChart22"></canvas>
+	       	<div class="absolute-center text-center">
+		    <p><strong>105%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>37</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      
+	      <p class="card-text mt-3">Job 11: 2 parts behind</p>
         </div>
         <div class="t1">
       		<canvas id="myChart23"></canvas>
@@ -65,16 +85,24 @@
       <small class="text-muted"  id="current_time1"></small>
     </div>
   </div>
-  <div class="card">
+  <div class="card" id="c3">
 
-    <div class="card-body">
+    <div class="card-body py-0 px-0" id="33">
     	<div class="three">
 	      <h5 class="card-title">NZ T2</h5>
 	      <div class="radio">
 			<label><input type="radio" name="optradio" checked> In cylce for two hours</label>
 		  </div>
-	      <canvas id="myChart32"></canvas>
-	      <p class="card-text">Job 2 : 9 parts behind</p>
+	      <div class="relative">
+	       <canvas id="myChart32"></canvas>
+	       	<div class="absolute-center text-center">
+		   <p><strong>85%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>53</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      <p class="card-text mt-3">Job 2 : 9 parts behind</p>
       	</div>
       	<div class="t2">
       		<canvas id="myChart33"></canvas>
@@ -91,7 +119,7 @@
   <div class="col-sm-4 mt-3 mb-3">
     <div class="card">
 
-      <div class="card-body">
+      <div class="card-body py-0 px-0">
       	<div class="s1">
 			<h5 class="card-title">Duracentre 1 (by VF3)</h5>
 			 <div class="radio">
@@ -111,7 +139,7 @@
   </div>
   <div class="col-sm-4 mt-3 mb-3">
     <div class="card">
-      <div class="card-body">
+      <div class="card-body py-0 px-0">
 	      	<div class="s2">
 	        <h5 class="card-title">NH40000</h5>
 	       <div class="radio">
@@ -131,7 +159,7 @@
 
   <div class="col-sm-4 mt-3 mb-3">
     <div class="card">
-      <div class="card-body">
+      <div class="card-body py-0 px-0">
       	<div class="s3">
 	        <h5 class="card-title">NL 2599</h5>
 	       	
@@ -176,63 +204,57 @@
   document.getElementById("current_time4").innerHTML = time4;
   document.getElementById("current_time5").innerHTML = time5;
 
-		let mydoughnut = document.getElementById('myChart1').getContext('2d');
-		Chart.defaults.global.defaultFontFamily='Lato';
-		Chart.defaults.global.defaultFontSize=18;
-		Chart.defaults.global.defaultFontColor='grey';
-		let massDoughnutChart = new Chart(mydoughnut, {
-		type: 'doughnut'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
-		data:{
-			labels:["P1"],
-			datasets:[{
-				label:"Parts",
-				data:[
-				46,54,89
-				],
-				backgroundColor:'#800000',
 
-				// backgroundColor:[
-				// "green","blue","red","yellow","pink"
-				// ],
-				borderWidth:0,
-				borderColor:"#777",
-				hoverBorderWidth:3,
-				hoverBorderColor:"black"
-			}]
-		},
-		options:{
-			title:{
-				display:false,
-				text:'largest cities',
-				fontSize:25
-			},
-			legend:{
-				display:false,  // false removes the popution label
-				position:"right", //positions the population to the right
-				labels:{
-					display:false,
-					fontColor:"#000"
-				}
 
-			},
-			layout:{
-				padding:{
-					left:50,
-					right:0,
-					top:0,
-					bottom:0
-				}
-			},
-			toolTips:{
-				enabled:false
-			}
-		}
-	});	
+var value = 36;
+
+var mydoughnut = new Chart(document.getElementById('myChart1'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#ed766d",
+        "#AAAAAA"
+      ],
+      hoverBackgroundColor: [
+        "#ed766d",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+
+
 
 		let myChart = document.getElementById('myChart').getContext('2d');
-		Chart.defaults.global.defaultFontFamily='Lato';
-		Chart.defaults.global.defaultFontSize=18;
-		Chart.defaults.global.defaultFontColor='grey';
+		// Chart.defaults.global.defaultFontFamily='Lato';
+		// Chart.defaults.global.defaultFontSize=18;
+		// Chart.defaults.global.defaultFontColor='grey';
 		let massPopChart = new Chart(myChart, {
 		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
 		data:{
@@ -243,16 +265,17 @@
 				46,54,89
 				],
 				backgroundColor:"	#800000",
-				// backgroundColor:[
-				// "green","blue","red","yellow","pink"
-				// ],
+			
 				borderWidth:0,
 				borderColor:"#777",
 				hoverBorderWidth:3,
+				hoverBackgroundColor:"#800000",
 				hoverBorderColor:"black"
 			}]
 		},
 		options:{
+			
+
 			title:{
 				display:false,
 				text:'largest cities',
@@ -281,62 +304,58 @@
 		}
 	});
 
+var value = 47;
+
+var mydoughnut11 = new Chart(document.getElementById('myChart22'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#41824f",
+        "#AAAAAA"
+      ],
+      hoverBackgroundColor: [
+        "#41824f",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
 
 
 
-	let mydoughnut11 = document.getElementById('myChart22').getContext('2d');
-		Chart.defaults.global.defaultFontFamily='Lato';
-		Chart.defaults.global.defaultFontSize=18;
-		Chart.defaults.global.defaultFontColor='grey';
 
-		let massDoughnutChart1 = new Chart(mydoughnut11, {
-		type: 'doughnut'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
-		data:{
-			labels:["P1"],
-			datasets:[{
-				label:"Parts",
-				
-				data:[
-				36,84,67
-				],
-				backgroundColor:'green',
-				// backgroundColor:[
-				// "green","blue","red","yellow","pink"
-				// ],
-				borderWidth:0,
-				borderColor:"#777",
-				hoverBorderWidth:3,
-				hoverBorderColor:"black"
-			}]
-		},
-		options:{
-			title:{
-				display:false,
-				text:'largest cities',
-				fontSize:25
-			},
-			legend:{
-				display:false,  // false removes the popution label
-				position:"right", //positions the population to the right
-				labels:{
-					display:false,
-					fontColor:"#000"
-				}
 
-			},
-			layout:{
-				padding:{
-					left:50,
-					right:0,
-					top:0,
-					bottom:0
-				}
-			},
-			toolTips:{
-				enabled:false
-			}
-		}
-	});	
+
+
+
+
+
+
 
 		let myChart1 = document.getElementById('myChart23').getContext('2d');
 		Chart.defaults.global.defaultFontFamily='Lato';
@@ -391,55 +410,51 @@
 		}
 	});
 
-		let mydoughnut3 = document.getElementById('myChart32').getContext('2d');
-		Chart.defaults.global.defaultFontFamily='Lato';
-		Chart.defaults.global.defaultFontSize=18;
-		Chart.defaults.global.defaultFontColor='grey';
-		let massDoughnutChart3 = new Chart(mydoughnut3, {
-		type: 'doughnut'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
-		data:{
-			labels:["P1"],
-			datasets:[{
-				label:"Parts",
-				data:[
-				62,39,78
-				],
-				backgroundColor:'orange',
-				
-				borderWidth:0,
-				borderColor:"#777",
-				hoverBorderWidth:3,
-				hoverBorderColor:"black"
-			}]
-		},
-		options:{
-			title:{
-				display:false,
-				text:'largest cities',
-				fontSize:25
-			},
-			legend:{
-				display:false,  // false removes the popution label
-				position:"right", //positions the population to the right
-				labels:{
-					display:false,
-					fontColor:"#000"
-				}
 
-			},
-			layout:{
-				padding:{
-					left:50,
-					right:0,
-					top:0,
-					bottom:0
-				}
-			},
-			toolTips:{
-				enabled:false
-			}
-		}
-	});	
+		var value = 75;
+
+var mydoughnut3 = new Chart(document.getElementById('myChart32'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#f5a43b",
+        "#AAAAAA"
+      ],
+      hoverBackgroundColor: [
+        "#f5a43b",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+
+
 
 		let myChart3 = document.getElementById('myChart33').getContext('2d');
 		Chart.defaults.global.defaultFontFamily='Lato';
