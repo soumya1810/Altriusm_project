@@ -32,3 +32,34 @@
 .s3{
 	background-color: grey;
 }
+#pi {
+	border: 0px;
+}
+
+#c33 {
+	height: 20px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute-center {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-center{
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: -20px;
+}
+
+
+
+
