@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Charts</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style11.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- for mobile device -->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Corben:wght@800&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="row">
+    <div class="col-lg-2" id="q">
+	  <div class="one">
+      	  <h5 class="card-title">Brother Cell 10-left</h5>
+	      <div class="radio">
+			<div class="custom-control custom-radio pl-0">
+			<ul class="pl-0">
+			<li id="l1"><span id="l11">In Cyle for 40 mins</span></li>
+			
+			</ul>
+			</div>
+		  </div>
+		  <div class="relative">
+		
+	       <canvas id="myChart1"></canvas>
+	   
+	       	<div class="absolute-center text-center">
+		    <p><strong>36%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>62</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+		<p class="mb-0 mt-3">Job 13: 60 parts behind</p>
+  	  </div>
+  	  <div class="o"  >
+  	  	<div class="chart-container" style="position: relative; height:12vh; width:12vw">
+    		<canvas id="myChart"></canvas>
+		</div>
+	</div>
+   <div class=" tm1">
+      <small class="text-white" id="current_time"></small>
+    </div>
+  </div>
+   <div class="col-lg-2" id="w">
+  
+  		<div class="two">
+	      <h5 class="card-title">NZX-T2</h5>
+	      <ul class="pl-0">
+			<li><span>In cyle for 35mins</span></li>
+			</ul>
+	
+		  <div class="relative">
+	       <canvas id="myChart22"></canvas>
+	       	<div class="absolute-center text-center" >
+	       		<p><span></span></p>
+		    <p><strong>105%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>37</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      
+	      <p class="card-text mt-3">Job 11: 2 parts behind</p>
+        </div>
+        <div class="t1">
+      		<div class="chart-container" style="position: relative; height:12vh; width:12vw">
+    		<canvas id="myChart23"></canvas>
+		</div>
+  		</div>
+    <div class=" tm2">
+      <small class=" text-white "  id="current_time1"></small>
+    </div>
+  </div>
+   <div class="col-lg-2" id="e">
+    	<div class="three">
+	      <h5 class="card-title">NZ T2</h5>
+	     <ul class="pl-0">
+			<li id="l2"><span id="l22">In cyle for 35mins</span></li>
+			
+		</ul >
+	      <div class="relative">
+	       <canvas id="myChart32"></canvas>
+	       	<div class="absolute-center text-center ">
+		   <p ><strong>85%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>53</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      <p class="card-text mt-3">Job 2 : 9 parts behind</p>
+      	</div>
+      	<div class="t2">
+      		<div class="chart-container" style="position: relative; height:12vh; width:12vw">
+    		<canvas id="myChart33"></canvas>
+		</div>
+  		</div>
+
+
+		<div class=" tm3">
+      <small class="text-white" id="current_time2">Last updated 3 mins ago</small>
+    </div>
+  </div>
+
+
+ <div class="col-lg-2">
+  
+  		<div class="two">
+	      <h5 class="card-title">NZX-T2</h5>
+	      <ul class="pl-0">
+			<li><span>In cyle for 35mins</span></li>
+			</ul>
+	
+		  <div class="relative">
+	       <canvas id="myChart44"></canvas>
+	       	<div class="absolute-center text-center" >
+	       		<p><span></span></p>
+		    <p><strong>105%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>37</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      
+	      <p class="card-text mt-3">Job 11: 2 parts behind</p>
+        </div>
+        <div class="t1">
+      		<div class="chart-container" style="position: relative; height:12vh; width:12vw">
+    		<canvas id="myChart43"></canvas>
+		</div>
+  		</div>
+    <div class=" tm2">
+      <small class=" text-white "  id="current_time6"></small>
+    </div>
+  </div>
+
+
+
+  <div class="col-lg-2">
+  
+  		<div class="one">
+	      <h5 class="card-title">NZX-T2</h5>
+	      <ul class="pl-0">
+			<li><span>In cyle for 30mins</span></li>
+			</ul>
+	
+		  <div class="relative">
+	       <canvas id="myChart55"></canvas>
+	       	<div class="absolute-center text-center" >
+	       		<p><span></span></p>
+		    <p><strong>105%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>37</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      
+	      <p class="card-text mt-3">Job 14: 2 parts behind</p>
+        </div>
+        <div class="o">
+      		<div class="chart-container" style="position: relative; height:12vh; width:12vw">
+    		<canvas id="myChart53"></canvas>
+		</div>
+  		</div>
+    <div class=" tm1">
+      <small class=" text-white "  id="current_time7"></small>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="col-lg-2">
+  
+  		<div class="one">
+	      <h5 class="card-title">BROTHER CELL 20-RIGHT</h5>
+	      <ul class="pl-0">
+			<li><span>In cyle for 20mins</span></li>
+			</ul>
+	
+		  <div class="relative">
+	       <canvas id="myChart66"></canvas>
+	       	<div class="absolute-center text-center" >
+	       		<p><span></span></p>
+		    <p><strong>135%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>47</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      
+	      <p class="card-text mt-3">Job 12: 2 parts behind</p>
+        </div>
+        <div class="o">
+      		<div class="chart-container" style="position: relative; height:12vh; width:12vw">
+    		<canvas id="myChart63"></canvas>
+		</div>
+  		</div>
+    <div class=" tm1">
+      <small class=" text-white "  id="current_time8"></small>
+    </div>
+  </div>
+
+
+  <div class="col-lg-2">
+  
+  		<div class="one">
+	      <h5 class="card-title">Brother cell 20-right</h5>
+	      <ul class="pl-0">
+			<li><span>In cyle for 20mins</span></li>
+			</ul>
+	
+		  <div class="relative">
+	       <canvas id="myChart77"></canvas>
+	       	<div class="absolute-center text-center" >
+	       		<p><span></span></p>
+		    <p><strong>158%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>27</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      
+	      <p class="card-text mt-3">Job 14:  parts behind</p>
+        </div>
+        <div class="o">
+      		<div class="chart-container" style="position: relative; height:12vh; width:12vw">
+    		<canvas id="myChart73"></canvas>
+		</div>
+  		</div>
+    <div class=" tm1">
+      <small class=" text-white "  id="current_time9"></small>
+    </div>
+  </div>
+  
+
+
+
+   <div class="col-lg-2">
+  
+  		<div class="two">
+	      <h5 class="card-title">Brother Cell 20</h5>
+	      <ul class="pl-0">
+			<li><span>In cyle for 20mins</span></li>
+			</ul>
+	
+		  <div class="relative">
+	       <canvas id="myChart88"></canvas>
+	       	<div class="absolute-center text-center" >
+	       		<p><span></span></p>
+		    <p><strong>92%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>47</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      
+	      <p class="card-text mt-3">Job 12: 6 parts behind</p>
+        </div>
+        <div class="t1">
+      		<div class="chart-container" style="position: relative; height:12vh; width:12vw">
+    		<canvas id="myChart83"></canvas>
+		</div>
+  		</div>
+    <div class=" tm2">
+      <small class=" text-white "  id="current_time10"></small>
+    </div>
+  </div>
+  <div class="col-lg-2">
+  
+  		<div class="two">
+	      <h5 class="card-title">NZX T-3 right</h5>
+	      <ul class="pl-0">
+			<li><span>In cyle for 25mins</span></li>
+			</ul>
+	
+		  <div class="relative">
+	       <canvas id="myChart99"></canvas>
+	       	<div class="absolute-center text-center" >
+	       		<p><span></span></p>
+		    <p><strong>93%</strong></p>
+		    <p>Parts Goal</p>
+		    <p><strong>56</strong></p>
+		    <p>Parts </p>
+		  </div>
+		</div>
+	      
+	      <p class="card-text mt-3">Job 14: 3 parts behind</p>
+        </div>
+        <div class="t1">
+      		<div class="chart-container" style="position: relative; height:12vh; width:12vw">
+    		<canvas id="myChart93"></canvas>
+		</div>
+  		</div>
+    <div class=" tm2">
+      <small class=" text-white "  id="current_time11"></small>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+<!-- </row>
+
+<div class="row"> -->
+<table>
+<tr>
+
+
+  <div class="col-sm-4 mt-3 mb-3 col-lg-3">
+    <div class="card">
+
+      <div class="card-body py-0 px-0">
+      	<div class="s1">
+			<h5 class="card-title">Duracentre 1 (by VF3)</h5>
+			 <div class="radio">
+			<input type="radio" name="sameName" id="nameC" value="nameC">
+			<label for="nameC">In cycle for 3 mins</label>
+		  </div>
+	        <h3 class="card-text mb-0 pb-0">70%    5</h3>
+	        <p class="card-text mt-0 pt-0 p1">IN-CYLCE   PARTS</p>
+		</div>
+	    </div>
+	        <div class="g">
+	      		<small class="text-white "  id="current_time3"></small>
+  		
+    	</div>
+
+      <div class="card-body py-0 px-0 mt-2">
+      	<div class="s2">
+    	<h5 class="card-title">NH40000</h5>
+	       <div class="radio">
+			<input type="radio" name="sameName" id="nameD" value="nameD">
+			<label for="nameD">In cycle for 3 hrs</label>
+		  </div>
+	        <h3 class="card-text mb-0 pb-0">-  1</h3>
+	        <p class="card-text mt-0 pt-0 p1">IN-CYLCE   PARTS</p>
+	    </div>
+	</div>
+	        <div class="g">
+	      		<small class="text-white "  id="current_time4"></small>
+	    	</div>
+
+    	
+     
+      </div>
+    </div>
+  </div>
+</tr>
+
+</table>
+
+
+  <div class="col-sm-4 mt-3 mb-3 col-lg-3" >
+    <div class="card">
+      <div class="card-body py-0 px-0">
+      	<div class="s3">
+	        <h5 class="card-title">NL 2599</h5>
+	       	
+	       <div class="radio">
+			<label><input type="radio" name="optradio" checked> Idle for 3 days</label>
+		  </div>
+	        <h3 class="card-text mb-0 pb-0">-  2</h3>
+	        <p class="card-text mt-0 pt-0 p1">IN-CYLCE   PARTS</p>
+	    </div>
+	       	
+	        </div>
+	        <div class="g">
+	      		<small class="text-white "  id="current_time5"></small>
+	    	</div>
+    	
+
+       
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		var today = new Date();
+		 var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time1 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time2 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time3 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time4 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		 var time5 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		  	var time6 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	    var time7 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	    var time8 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	    var time9 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	    var time10 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	     var time11 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  
+  document.getElementById("current_time").innerHTML = time;
+  document.getElementById("current_time1").innerHTML = time1;
+  document.getElementById("current_time2").innerHTML = time2;
+  document.getElementById("current_time3").innerHTML = time3;
+  document.getElementById("current_time4").innerHTML = time4;
+  document.getElementById("current_time5").innerHTML = time5;
+   	document.getElementById("current_time6").innerHTML = time6;
+   	 document.getElementById("current_time7").innerHTML = time7;
+   	  document.getElementById("current_time8").innerHTML = time8;
+   	   document.getElementById("current_time9").innerHTML = time9;
+   	    document.getElementById("current_time10").innerHTML = time10;
+   	     document.getElementById("current_time11").innerHTML = time11;
+
+
+
+
+
+var value = 36;
+
+var mydoughnut = new Chart(document.getElementById('myChart1'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#800000",
+        "#ed766d"
+      ],
+      hoverBackgroundColor: [
+        "#ed766d",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+
+
+
+		let myChart = document.getElementById('myChart').getContext('2d');
+// 
+		// Chart.defaults.global.defaultFontFamily='Lato';
+		// Chart.defaults.global.defaultFontSize=18;
+		// Chart.defaults.global.defaultFontColor='grey';
+		let massPopChart = new Chart(myChart, {
+
+
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3","P4","P5","P6","P7","P8"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				46,54,89,65,75,36,23,54,
+				],
+				backgroundColor:"	#800000",
+			
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBackgroundColor:"#800000",
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			
+			 stacked: true,
+			 
+		scales: {
+                xAxes: [{
+                	barThickness: 10,  // number (pixels) or 'flex'
+                maxBarThickness: 12,
+                	width:10,
+                	height:2,
+                	 stacked: true,
+                	barPercentage: 0.3,
+                    categoryPercentage: 1,
+                	display:false,
+                  
+                }],
+                yAxes: [{
+                	
+                	display:false,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                    ticks: {
+                    	display:false,
+                        beginAtZero: true
+                    }
+                }]
+
+ },
+
+
+
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+
+
+
+
+
+		var value = 54;
+
+var mydoughnut55 = new Chart(document.getElementById('myChart55'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#800000",
+        "#ed766d"
+      ],
+      hoverBackgroundColor: [
+        "#ed766d",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+
+
+
+		let myChart5 = document.getElementById('myChart53').getContext('2d');
+// 
+		// Chart.defaults.global.defaultFontFamily='Lato';
+		// Chart.defaults.global.defaultFontSize=18;
+		// Chart.defaults.global.defaultFontColor='grey';
+		let massPopChart5 = new Chart(myChart5, {
+
+
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3","P4","P5","P6","P7","P8"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				46,54,89,65,75,36,23,54,
+				],
+				backgroundColor:"	#800000",
+			
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBackgroundColor:"#800000",
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			
+			 stacked: true,
+			 
+		scales: {
+                xAxes: [{
+                	barThickness: 10,  // number (pixels) or 'flex'
+                maxBarThickness: 12,
+                	width:10,
+                	height:2,
+                	 stacked: true,
+                	barPercentage: 0.3,
+                    categoryPercentage: 1,
+                	display:false,
+                  
+                }],
+                yAxes: [{
+                	
+                	display:false,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                    ticks: {
+                    	display:false,
+                        beginAtZero: true
+                    }
+                }]
+
+ },
+
+
+
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+		var value = 96;
+
+var mydoughnut66 = new Chart(document.getElementById('myChart66'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#800000",
+        "#ed766d"
+      ],
+      hoverBackgroundColor: [
+        "#ed766d",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+
+
+
+		let myChart6 = document.getElementById('myChart63').getContext('2d');
+// 
+		// Chart.defaults.global.defaultFontFamily='Lato';
+		// Chart.defaults.global.defaultFontSize=18;
+		// Chart.defaults.global.defaultFontColor='grey';
+		let massPopChart6 = new Chart(myChart6, {
+
+
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3","P4","P5","P6","P7","P8"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				46,54,89,65,75,36,23,54,
+				],
+				backgroundColor:"	#800000",
+			
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBackgroundColor:"#800000",
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			
+			 stacked: true,
+			 
+		scales: {
+                xAxes: [{
+                	barThickness: 10,  // number (pixels) or 'flex'
+                maxBarThickness: 12,
+                	width:10,
+                	height:2,
+                	 stacked: true,
+                	barPercentage: 0.3,
+                    categoryPercentage: 1,
+                	display:false,
+                  
+                }],
+                yAxes: [{
+                	
+                	display:false,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                    ticks: {
+                    	display:false,
+                        beginAtZero: true
+                    }
+                }]
+
+ },
+
+
+
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+		var value = 76;
+
+var mydoughnut77 = new Chart(document.getElementById('myChart77'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#800000",
+        "#ed766d"
+      ],
+      hoverBackgroundColor: [
+        "#ed766d",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+
+
+
+		let myChart7 = document.getElementById('myChart73').getContext('2d');
+// 
+		// Chart.defaults.global.defaultFontFamily='Lato';
+		// Chart.defaults.global.defaultFontSize=18;
+		// Chart.defaults.global.defaultFontColor='grey';
+		let massPopChart7 = new Chart(myChart7, {
+
+
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3","P4","P5","P6","P7","P8"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				46,54,89,65,75,36,23,54,
+				],
+				backgroundColor:"	#800000",
+			
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBackgroundColor:"#800000",
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			
+			 stacked: true,
+			 
+		scales: {
+                xAxes: [{
+                	barThickness: 10,  // number (pixels) or 'flex'
+                maxBarThickness: 12,
+                	width:10,
+                	height:2,
+                	 stacked: true,
+                	barPercentage: 0.3,
+                    categoryPercentage: 1,
+                	display:false,
+                  
+                }],
+                yAxes: [{
+                	
+                	display:false,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                    ticks: {
+                    	display:false,
+                        beginAtZero: true
+                    }
+                }]
+
+ },
+
+
+
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+
+var value = 47;
+
+var mydoughnut11 = new Chart(document.getElementById('myChart22'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#41824f",
+        "#50C878"
+      ],
+      hoverBackgroundColor: [
+        "#41824f",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+
+let myChart1 = document.getElementById('myChart23').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='black';
+		Chart.defaults.global.defaultDisplay=false;
+		let massPopChart1 = new Chart(myChart1, {
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3","P4","P5","P6","P7","P8"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				36,84,67,54,65,72,56,60
+				],
+				backgroundColor:'green',
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			 stacked: true,
+			 
+		scales: {
+                xAxes: [{
+                	 barThickness: 10,  // number (pixels) or 'flex'
+                maxBarThickness: 12,
+                	width:10,
+                	height:2,
+                	 stacked: true,
+                	barPercentage: 0.3,
+                    categoryPercentage: 1,
+                	display:false,
+                  
+                }],
+                yAxes: [{
+                	
+                	display:false,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                    ticks: {
+                    	display:false,
+                        beginAtZero: true
+                    }
+                }]
+
+ },
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+var value =56;
+
+var mydoughnut33 = new Chart(document.getElementById('myChart44'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#41824f",
+        "#50C878"
+      ],
+      hoverBackgroundColor: [
+        "#41824f",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+let myChart4 = document.getElementById('myChart43').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='black';
+		Chart.defaults.global.defaultDisplay=false;
+		let massPopChart4 = new Chart(myChart4, {
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3","P4","P5","P6","P7","P8"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				36,84,67,54,65,72,56,60
+				],
+				backgroundColor:'green',
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			 stacked: true,
+			 
+		scales: {
+                xAxes: [{
+                	 barThickness: 10,  // number (pixels) or 'flex'
+                maxBarThickness: 12,
+                	width:10,
+                	height:2,
+                	 stacked: true,
+                	barPercentage: 0.3,
+                    categoryPercentage: 1,
+                	display:false,
+                  
+                }],
+                yAxes: [{
+                	
+                	display:false,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                    ticks: {
+                    	display:false,
+                        beginAtZero: true
+                    }
+                }]
+
+ },
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+
+
+
+var value =78;
+
+var mydoughnut88 = new Chart(document.getElementById('myChart88'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#41824f",
+        "#50C878"
+      ],
+      hoverBackgroundColor: [
+        "#41824f",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+let myChart8 = document.getElementById('myChart83').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='black';
+		Chart.defaults.global.defaultDisplay=false;
+		let massPopChart8 = new Chart(myChart8, {
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3","P4","P5","P6","P7","P8"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				36,84,67,54,65,72,56,60
+				],
+				backgroundColor:'green',
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			 stacked: true,
+			 
+		scales: {
+                xAxes: [{
+                	 barThickness: 10,  // number (pixels) or 'flex'
+                maxBarThickness: 12,
+                	width:10,
+                	height:2,
+                	 stacked: true,
+                	barPercentage: 0.3,
+                    categoryPercentage: 1,
+                	display:false,
+                  
+                }],
+                yAxes: [{
+                	
+                	display:false,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                    ticks: {
+                    	display:false,
+                        beginAtZero: true
+                    }
+                }]
+
+ },
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+
+
+
+var value =66;
+
+var mydoughnut99 = new Chart(document.getElementById('myChart99'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#41824f",
+        "#50C878"
+      ],
+      hoverBackgroundColor: [
+        "#41824f",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+let myChart9= document.getElementById('myChart93').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='black';
+		Chart.defaults.global.defaultDisplay=false;
+		let massPopChart9 = new Chart(myChart9, {
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3","P4","P5","P6","P7","P8"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				36,84,67,54,65,72,56,60
+				],
+				backgroundColor:'green',
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+			 stacked: true,
+			 
+		scales: {
+                xAxes: [{
+                	 barThickness: 10,  // number (pixels) or 'flex'
+                maxBarThickness: 12,
+                	width:10,
+                	height:2,
+                	 stacked: true,
+                	barPercentage: 0.3,
+                    categoryPercentage: 1,
+                	display:false,
+                  
+                }],
+                yAxes: [{
+                	
+                	display:false,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                    ticks: {
+                    	display:false,
+                        beginAtZero: true
+                    }
+                }]
+
+ },
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+
+
+
+
+
+
+		var value = 75;
+
+var mydoughnut3 = new Chart(document.getElementById('myChart32'), {
+  type: 'doughnut',
+  data:{
+  labels: [
+    "My val",
+    ""
+  ],
+  datasets: [
+    {
+      data: [value, 100-value],
+      backgroundColor: [
+        "#f5a43b",
+        "#FF7F50"
+      ],
+      hoverBackgroundColor: [
+        "#f5a43b",
+        "#AAAAAA"
+      ],
+      hoverBorderColor: [
+        "##41824f",
+        "#ffffff"
+      ]
+    }]
+},
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+    tooltips: {
+    	filter: function(item, data) {
+        var label = data.labels[item.index];
+        if (label) return item;
+      }
+    }
+  }
+
+});
+
+
+
+
+		let myChart3 = document.getElementById('myChart33').getContext('2d');
+		Chart.defaults.global.defaultFontFamily='Lato';
+		Chart.defaults.global.defaultFontSize=18;
+		Chart.defaults.global.defaultFontColor='grey';
+		let massPopChart3 = new Chart(myChart3, {
+		type: 'bar'  ,  //bar,horizontal,doughnut,pie,line,radar,polarArea
+		data:{
+			labels:["P1", "P2" , "P3","P4","P5","P6","P7","P8"],
+			datasets:[{
+				label:"Parts",
+				data:[
+				62,39,78,56,45,86,67,45
+				],
+				backgroundColor:'orange',
+				// backgroundColor:[
+				// "green","blue","red","yellow","pink"
+				// ],
+				borderWidth:0,
+				borderColor:"#777",
+				hoverBorderWidth:3,
+				hoverBorderColor:"black"
+			}]
+		},
+		options:{
+
+
+			 stacked: true,
+			 
+		scales: {
+                xAxes: [{
+                	barThickness: 10,  // number (pixels) or 'flex'
+                maxBarThickness: 12,
+                	width:10,
+                	height:2,
+                	 stacked: true,
+                	barPercentage: 0.3,
+                    categoryPercentage: 1,
+                	display:false,
+                  
+                }],
+                yAxes: [{
+                	
+                	display:false,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                    ticks: {
+                    	display:false,
+                        beginAtZero: true
+                    }
+                }]
+
+ },
+			title:{
+				display:false,
+				text:'largest cities',
+				fontSize:25
+			},
+			legend:{
+				display:false,  // false removes the popution label
+				position:"right", //positions the population to the right
+				labels:{
+					display:false,
+					fontColor:"#000"
+				}
+
+			},
+			layout:{
+				padding:{
+					left:50,
+					right:0,
+					top:0,
+					bottom:0
+				}
+			},
+			toolTips:{
+				enabled:false
+			}
+		}
+	});
+	</script>
+
+
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
